@@ -2,7 +2,7 @@
     <wb-module deploy-name="tattondemo">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="tattondemo"/>
         <property name="java-output-path" value="/tattondemo/Webcontext/classpath"/>
+        <property name="context-root" value="/"/>
     </wb-module>
 </project-modules>
