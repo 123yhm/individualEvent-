@@ -2,6 +2,8 @@ package com.cq.projecttwo.test;
 
 import org.junit.Test;
 
+import com.cq.projecttwo.safetydome.code.ThreadLocaDemo2;
+import com.cq.projecttwo.safetydome.code.ThreadLocaThread;
 import com.cq.projecttwo.thread.ThreadRunbleDome1;
 import com.cq.projecttwo.thread.ThreadThreadDome2;
 
@@ -52,4 +54,20 @@ public class TestThead {
 			System.out.println("主线程"+i);
 		}
 	}
+	/**
+	 * ThreadLoca
+	 * 
+	 */
+	@org.junit.Test
+	public  void testThreadLoca() {
+		ThreadLocaThread res = new ThreadLocaThread();
+		ThreadLocaDemo2 threadLocaDemo1 = new ThreadLocaDemo2(res);
+		ThreadLocaDemo2 threadLocaDemo2 = new ThreadLocaDemo2(res);
+		ThreadLocaDemo2 threadLocaDemo3 = new ThreadLocaDemo2(res);
+		threadLocaDemo1.start();
+		threadLocaDemo2.start();
+		threadLocaDemo3.start();
+
+	
+	} 
 }
