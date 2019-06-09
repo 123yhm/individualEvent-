@@ -25,6 +25,7 @@ public class MsgSend {
 		List<List<UserEntity>> splitList=ListUtils.splitList(userEntities,userThreadPage);
 		//线程长度
 		int TreadNumber=splitList.size();
+		System.out.println("线程数量"+TreadNumber);
 		for(int i=0;i<TreadNumber;i++){
 			//得到每个当前循环线程的用户数量
 			List<UserEntity> list=splitList.get(i);
